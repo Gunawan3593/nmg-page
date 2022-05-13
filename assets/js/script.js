@@ -75,5 +75,4 @@ const App = createApp({
     }
   }
 });
-
 App.mount('#app')
