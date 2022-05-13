@@ -227,7 +227,7 @@
       <div class="container">
         <h1 class="text-2xl font-semibold text-center text-slate-700">Cari <span class="text-tertiary">Reseller</span></h1>
         <form class="text-center mt-5">
-          <select class="py-3 px-5 rounded-lg bg-transparent outline-none border-2 border-slate-700 text-slate-700" v-model="data.region" name="region" id="region" @click="selectRegion()" @change="selectRegion()">
+          <select class="py-3 px-5 rounded-lg bg-transparent outline-none border-2 border-slate-700 text-slate-700" v-model="data.region" name="region" id="region" @input="selectRegion()">
             <option value="">Pilih Kota</option>
             <option v-for="region in regions" >{{ region.text  }}</option>
           </select>
@@ -307,6 +307,6 @@
   <!-- <script src="https://unpkg.com/vue@3"></script> -->
   <!-- PRO MODE -->
   <script src="assets/js/vue.global.prod.js"></script>
-  <script src="assets/js/script.js?v=1"></script>
+  <script src="assets/js/script.js?v=2"></script>
 </body>
 </html>
