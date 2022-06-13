@@ -28,11 +28,11 @@ const App = createApp({
       width.value = document.documentElement.clientWidth;
     }
 
-    function selectRegion() {
+    const selectRegion = () => {
       data.resellers = resellers.value.filter(item => item.region === data.region);
     }
 
-    async function readTextFile(file, callback) {
+    function readTextFile(file, callback) {
       var rawFile = new XMLHttpRequest();
       rawFile.overrideMimeType("application/json");
       rawFile.open("GET", file, true);
@@ -44,14 +44,15 @@ const App = createApp({
       rawFile.send(null);
     }
 
-    readTextFile("assets/json/reseller.json", function(text){
-      var data = JSON.parse(text); //parse JSON
-      resellers.value =  data;
-    });
-
     readTextFile("assets/json/region.json", function(text){
       var data = JSON.parse(text); //parse JSON
       regions.value =  data;
+    });
+
+    readTextFile("assets/json/reseller.json", function(text){
+      var data = JSON.parse(text); //parse JSON
+      resellers.value =  data;
+      selectRegion();
     });
  
     onMounted(() => {

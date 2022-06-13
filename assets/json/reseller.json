@@ -1,5 +1,30 @@
 [
   {
+    "name": "nmgskincare_batubulan",
+    "region": "Batu Bulan",
+    "wa": 6287879478413
+  },
+  {
+    "name": "Eva_rayana",
+    "region": "Denpasar Timur",
+    "wa": 6285737629986
+  },
+  {
+    "name": "",
+    "region": "Ubud",
+    "wa": 6282144155554
+  },
+  {
+    "name": "Nmg.skincare_sby",
+    "region": "Sidoarjo",
+    "wa": 6281332668991
+  },
+  {
+    "name": "Tary_queenbee",
+    "region": "Romania",
+    "wa": 40721047880
+  },
+  {
     "name": "nmgskincare.tabanan",
     "region": "Tabanan",
     "wa": 6285954519329
@@ -171,7 +196,7 @@
   },
   {
     "name": "nmgskincare_denpasarselatan",
-    "region": "Denpasarselatan",
+    "region": "Denpasar Selatan",
     "wa": 6289670163682
   },
   {
