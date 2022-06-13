@@ -227,8 +227,8 @@
       <div class="container">
         <h1 class="text-2xl font-semibold text-center text-slate-700">Cari <span class="text-tertiary">Reseller</span></h1>
         <form class="text-center mt-5">
-          <select class="py-3 px-5 rounded-lg bg-transparent outline-none border-2 border-slate-700 text-slate-700" v-model="data.region" name="region" id="region" @change="selectRegion()">
-            <option value="">Pilih Kota</option>
+          <select class="py-2 px-5 rounded-lg bg-transparent outline-none border-2 border-slate-700 text-slate-700" v-model="data.region" name="region" id="region" @change="selectRegion()">
+            <option value="">Pusat</option>
             <option v-for="region in regions" :value="region.text">{{ region.text  }}</option>
           </select>
         </form>
