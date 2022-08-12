@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['index.html'],
+  content: ['index.html', 'body-care/index.html'],
   theme: {
     extend: {
       container: {
