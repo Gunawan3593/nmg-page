@@ -44,12 +44,12 @@ const App = createApp({
       rawFile.send(null);
     }
 
-    readTextFile("assets/json/region.json?1", function(text){
+    readTextFile("assets/json/region.json?2", function(text){
       var data = JSON.parse(text); //parse JSON
       regions.value =  data;
     });
 
-    readTextFile("assets/json/reseller.json?1", function(text){
+    readTextFile("assets/json/reseller.json?2", function(text){
       var data = JSON.parse(text); //parse JSON
       resellers.value =  data;
       selectRegion();
